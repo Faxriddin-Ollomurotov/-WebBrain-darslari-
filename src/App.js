@@ -1,10 +1,9 @@
 import React from "react";
-import Container from "./2-dars props/props";
+import Dars_2 from "./3-dars";
 function App() {
   return (
     <>
-    <Container name="Faxriddin"> Hello</Container>
-    <Container name="Umbar">Hello</Container>
+    <Dars_2/>
     </>
   );
 }
