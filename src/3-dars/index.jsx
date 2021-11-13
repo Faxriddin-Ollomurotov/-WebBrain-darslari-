@@ -32,10 +32,19 @@ import {ReactComponent as person} from "./icons/1824147.svg"
 
 
 export default class Dars_2 extends Component {
+    state={
+        active:0,
+    }
     render() {
         return (
             <div>
-                {SidebarData.map(({id, icon, title})=><Menu id={id} Icon={icon} title={title}/>)};
+                {SidebarData.map(({id,icon, title})=>{
+                    return(
+                        <div key={id} onClick={()=>this.setState({active:id})}>
+                            <Menu active={this.state.active===id} id={id} Icon={icon} title={title}/>
+                        </div>
+                    )
+                })}
             </div>
         )
     }

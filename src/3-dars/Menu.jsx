@@ -5,7 +5,7 @@ export default class Menu extends Component {
     render() {
         const {Icon}=this.props
         return (
-            <div className='container'>
+            <div className={`container active-${this.props.active}`}>
                 <Icon className='icon'/>
                 <h2 className='title'>{this.props.title}</h2>
             </div>
