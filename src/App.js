@@ -1,9 +1,9 @@
 import React from "react";
-import Dars_2 from "./3-dars";
+import State from "./5-dars murakkab state/state";
 function App() {
   return (
     <>
-    <Dars_2/>
+      <State/>
     </>
   );
 }
