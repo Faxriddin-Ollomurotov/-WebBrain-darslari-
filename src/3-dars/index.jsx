@@ -33,7 +33,7 @@ import {ReactComponent as person} from "./icons/1824147.svg"
 
 export default class Dars_2 extends Component {
     state={
-        active:0,
+        active:null,
     }
     render() {
         return (
